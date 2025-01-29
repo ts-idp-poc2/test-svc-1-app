@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     retVal = {
-        "msg":"hello world part 2",
+        "msg":"hello world part 3",
         "host":"%s" % socket.gethostname()
 
     }
