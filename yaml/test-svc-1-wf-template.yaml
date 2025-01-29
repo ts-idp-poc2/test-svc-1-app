@@ -49,6 +49,7 @@ spec:
             LATEST_COMMIT=$(git rev-parse --short HEAD)
             echo -n $LATEST_COMMIT > /workdir/tag.txt
             cat /workdir/tag.txt
+            chmod -R ugo+rw /workdir
         volumeMounts:
         - name: workdir
           mountPath: /workdir
